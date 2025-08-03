@@ -27,7 +27,7 @@ This project simulates a real-world vehicle rental system with a strong emphasis
 - 📊 View Vehicles Sorted by Rent using Binary Search Tree (BST)
 - 🧾 Queue Management for Vehicle Booking (FIFO)
 - 💳 Payment via Cash and Credit Card (CVV + Expiry)
-- 🔁 Return Car functionality included
+- 🔁 Rent & Return a Car functionality
 - 🗃️ JDBC-based MySQL Database Integration
 
 ---
@@ -50,8 +50,7 @@ VehicleRentalSystem/
 ├── src/                      # Core source files
 │   ├── App.java              # Entry point with role routing
 │   ├── Admin.java            # Admin panel logic
-│   ├── BinarySearchTree.java# Vehicle BST structure
-│   ├── Payment.java          # Handles payment input and validation
+│   ├── BinarySearchTree.java # Vehicle BST structure
 │   └── ...
 ├── lib/                      # External dependencies
 │   └── mysql-connector-j-8.3.0.jar
@@ -66,23 +65,20 @@ VehicleRentalSystem/
 
 1. 📥 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/vehicle-rental-system-java.git
-cd vehicle-rental-system-java
+https://github.com/romilmonpara/Vehicle-Rental-System-Java-JDBC.git
 ```
 
-2. 🛠 Import into any Java IDE (IntelliJ, Eclipse)
+2. 🛠 Import into any Java IDE (VSCode, IntelliJ, Eclipse)
 
 3. 🧩 Configure MySQL Database
-   - Update credentials in `DBConnection.java`
    - Import the SQL schema (see below)
 
 4. ▶️ Run `App.java` and start using
 
 ---
 
-## 📥 Database & Resources
+## 📥 For Database & Resources
 
-For:
 - 🔐 Database `.sql` file
 - 📊 Project Presentation `.ppt`
 - 🗂️ Full working project zip (compiled + resources)
@@ -105,4 +101,4 @@ This project is licensed under the [MIT License](LICENSE)
 
 ---
 
-⭐ Star this repo if you like it — contributions welcome!
+⭐ Star this repo if you like it!
