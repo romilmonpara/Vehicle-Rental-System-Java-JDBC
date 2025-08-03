@@ -1,36 +1,35 @@
 # 🚗 Vehicle Rental System in Java
 
-A simple **Vehicle Rental System** built using **Java**, **JDBC**, and **Data Structures** (Binary Search Tree & Queue). This project simulates the functionality of a real-world vehicle rental system, focusing on console-based interaction.
+[![Java](https://img.shields.io/badge/Java-17-blue?style=flat-square&logo=java)](https://www.oracle.com/java/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=flat-square&logo=mysql)](https://www.mysql.com/)
+[![JDBC](https://img.shields.io/badge/JDBC-Connector-green?style=flat-square)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A complete console-based Java project for managing a vehicle rental system using JDBC and MySQL. This system supports two user panels—Admin and User—and includes complete payment handling (Cash & Credit Card).
 
 ---
 
 ## 📌 Features
 
-- ✅ **User Registration**
-  - Fields: Name, Password, Mobile Number, License Number, Email, City
-  - Validations included (email, mobile number, password)
-  - Custom exceptions for invalid input (e.g., digits in name)
-
-- ✅ **Display Vehicles**
-  - Uses a **Binary Search Tree (BST)** to display vehicles sorted by rental price in descending order.
-
-- ✅ **Vehicle Rental Requests**
-  - Handled using a **Queue** structure to serve on a **First-Come, First-Served** basis.
-
-- ✅ **Database Integration (JDBC)**
-  - Stores user data and vehicle information in a relational database.
-
-- ❌ **Return Car Functionality**
-  - Not implemented intentionally for this version.
+- ✅ User Registration with validation and custom exceptions
+- ✅ Admin and User Panels with separate functionality
+- ✅ Add / Edit / Delete / View Vehicles (Admin)
+- ✅ Browse and Book Vehicles (User)
+- ✅ Queue-based rental requests
+- ✅ Binary Search Tree (BST) for vehicle sorting by rent
+- ✅ Payment through Cash and Credit Card (CVV included)
+- ✅ Return Car functionality included
+- ✅ MySQL JDBC Integration
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Java (Core Java, OOP)
+- Java (OOP)
 - JDBC (Java Database Connectivity)
-- MySQL (Backend Database)
+- MySQL (Database)
 - Data Structures: Queue, Binary Search Tree (BST)
+- Console UI (Color-coded)
 
 ---
 
@@ -38,48 +37,43 @@ A simple **Vehicle Rental System** built using **Java**, **JDBC**, and **Data St
 
 ```
 VehicleRentalSystem/
-├── bin/                                # Compiled .class files (not required to upload)
-│   ├── Admin.class
-│   ├── App.class
-│   ├── BinarySearchTree.class
-│   └── ...
-│
-├── lib/                                # External libraries
+├── bin/                                # Compiled .class files (ignored)
+├── lib/                                # MySQL JDBC connector .jar
 │   └── mysql-connector-j-8.3.0.jar
-│
-├── src/                                # Source code files
+├── src/                                # Source code
 │   ├── Admin.java
 │   ├── App.java
 │   ├── BinarySearchTree.java
+│   ├── Payment.java (if separated)
 │   └── ...
-│
-├── README.md                           # Project documentation
-└── .gitignore                          # (Recommended) Ignore bin/ and class files
+├── README.md
+└── .gitignore
 ```
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone the repository:
+1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/vehicle-rental-system-java.git
    cd vehicle-rental-system-java
    ```
 
-2. Import the project into your preferred Java IDE (e.g., IntelliJ IDEA, Eclipse).
+2. Open in IntelliJ, Eclipse or any Java IDE.
 
-3. Set up your **MySQL database** and tables.
+3. Set up your MySQL database and update credentials in DBConnection.java.
 
-4. Update your database credentials in `DBConnection.java`.
+4. Add the MySQL JDBC driver (lib/mysql-connector-j-8.3.0.jar) to your classpath.
 
-5. Compile and run the project.
+5. Compile and run the App.java
 
 ---
 
 ## 📥 Database Setup
 
-For the database `.sql` file, **please contact the developer.**
+For the `.sql` database file, project report/presentation `.ppt`, or complete zip of the working project:  
+📩 **Please contact the developer directly.**
 
 ---
 
@@ -87,10 +81,10 @@ For the database `.sql` file, **please contact the developer.**
 
 **Romil Monpara**  
 B.Tech IT, LJIET Ahmedabad  
-[GitHub](https://github.com/romilmonpara)
+📧 [GitHub](https://github.com/romilmonpara)
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
