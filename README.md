@@ -38,16 +38,23 @@ A simple **Vehicle Rental System** built using **Java**, **JDBC**, and **Data St
 
 ```
 VehicleRentalSystem/
-├── src/
-│   ├── Main.java
-│   ├── User.java
-│   ├── Vehicle.java
-│   ├── BST.java
-│   ├── Queue.java
-│   ├── DBConnection.java
-│   └── CustomExceptions.java
-├── README.md
-└── (database SQL file - not included)
+├── bin/                                # Compiled .class files (not required to upload)
+│   ├── Admin.class
+│   ├── App.class
+│   ├── BinarySearchTree.class
+│   └── ...
+│
+├── lib/                                # External libraries
+│   └── mysql-connector-j-8.3.0.jar
+│
+├── src/                                # Source code files
+│   ├── Admin.java
+│   ├── App.java
+│   ├── BinarySearchTree.java
+│   └── ...
+│
+├── README.md                           # Project documentation
+└── .gitignore                          # (Recommended) Ignore bin/ and class files
 ```
 
 ---
