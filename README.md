@@ -29,6 +29,7 @@ This project simulates a real-world vehicle rental system with a strong emphasis
 - 💳 Payment via Cash and Credit Card (CVV + Expiry)
 - 🔁 Rent & Return a Car functionality
 - 🗃️ JDBC-based MySQL Database Integration
+- 🖍️ ANSI Color-Coded CLI (Optional Add-On Section)
 
 ---
 
@@ -65,7 +66,7 @@ VehicleRentalSystem/
 
 1. 📥 Clone the repository:
 ```bash
-https://github.com/romilmonpara/Vehicle-Rental-System-Java-JDBC.git
+git clone https://github.com/romilmonpara/Vehicle-Rental-System_Java_JDBC_MySql.git
 ```
 
 2. 🛠 Import into any Java IDE (VSCode, IntelliJ, Eclipse)
