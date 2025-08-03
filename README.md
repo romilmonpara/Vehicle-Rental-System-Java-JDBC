@@ -1,90 +1,108 @@
-# 🚗 Vehicle Rental System in Java
+<!-- Banner -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-Project-blue?style=for-the-badge&logo=java" />
+  <img src="https://img.shields.io/badge/MySQL-Database-green?style=for-the-badge&logo=mysql" />
+  <img src="https://img.shields.io/badge/JDBC-Integration-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
+</p>
 
-[![Java](https://img.shields.io/badge/Java-17-blue?style=flat-square&logo=java)](https://www.oracle.com/java/)
-[![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=flat-square&logo=mysql)](https://www.mysql.com/)
-[![JDBC](https://img.shields.io/badge/JDBC-Connector-green?style=flat-square)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-A complete console-based Java project for managing a vehicle rental system using JDBC and MySQL. This system supports two user panels—Admin and User—and includes complete payment handling (Cash & Credit Card).
-
----
-
-## 📌 Features
-
-- ✅ User Registration with validation and custom exceptions
-- ✅ Admin and User Panels with separate functionality
-- ✅ Add / Edit / Delete / View Vehicles (Admin)
-- ✅ Browse and Book Vehicles (User)
-- ✅ Queue-based rental requests
-- ✅ Binary Search Tree (BST) for vehicle sorting by rent
-- ✅ Payment through Cash and Credit Card (CVV included)
-- ✅ Return Car functionality included
-- ✅ MySQL JDBC Integration
+<h1 align="center">🚗 Vehicle Rental System using Java & MySQL</h1>
+<p align="center">
+  A fully functional console-based vehicle rental system built in Java, featuring admin and user panels, queue management, BST-based sorting, payment integration, and JDBC connectivity.
+</p>
 
 ---
 
-## 🛠️ Technologies Used
+## ✨ Overview
 
-- Java (OOP)
-- JDBC (Java Database Connectivity)
-- MySQL (Database)
-- Data Structures: Queue, Binary Search Tree (BST)
-- Console UI (Color-coded)
+This project simulates a real-world vehicle rental system with a strong emphasis on object-oriented design, custom data structures, and clean CLI interactions. It provides separate workflows for Admin and Users, handles vehicle management, payments, and maintains rental records using a MySQL database.
 
 ---
 
-## 📂 Project Structure
+## 🔧 Core Features
+
+- 🧍‍♂️ User Registration with input validation
+- 🧑‍💼 Admin & User Panel with role-specific functionality
+- 🚘 Add / Edit / Delete / View Vehicles (Admin)
+- 📊 View Vehicles Sorted by Rent using Binary Search Tree (BST)
+- 🧾 Queue Management for Vehicle Booking (FIFO)
+- 💳 Payment via Cash and Credit Card (CVV + Expiry)
+- 🔁 Return Car functionality included
+- 🗃️ JDBC-based MySQL Database Integration
+
+---
+
+## 🗃️ Tech Stack
+
+| Language   | Java (JDK 17+) |
+|------------|----------------|
+| Backend    | MySQL          |
+| Connector  | JDBC           |
+| UI Type    | Console (CLI)  |
+| Structures | Queue, BST     |
+
+---
+
+## 📁 Folder Structure
 
 ```
 VehicleRentalSystem/
-├── bin/                                # Compiled .class files (ignored)
-├── lib/                                # MySQL JDBC connector .jar
-│   └── mysql-connector-j-8.3.0.jar
-├── src/                                # Source code
-│   ├── Admin.java
-│   ├── App.java
-│   ├── BinarySearchTree.java
-│   ├── Payment.java (if separated)
+├── src/                      # Core source files
+│   ├── App.java              # Entry point with role routing
+│   ├── Admin.java            # Admin panel logic
+│   ├── BinarySearchTree.java# Vehicle BST structure
+│   ├── Payment.java          # Handles payment input and validation
 │   └── ...
-├── README.md
-└── .gitignore
+├── lib/                      # External dependencies
+│   └── mysql-connector-j-8.3.0.jar
+├── bin/                      # Compiled class files (ignored in Git)
+├── README.md                 # Project overview
+└── .gitignore                # File exclusions
 ```
 
 ---
 
-## 🚀 How to Run
+## 🚀 Getting Started
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/vehicle-rental-system-java.git
-   cd vehicle-rental-system-java
-   ```
+1. 📥 Clone the repository:
+```bash
+git clone https://github.com/yourusername/vehicle-rental-system-java.git
+cd vehicle-rental-system-java
+```
 
-2. Open in IntelliJ, Eclipse or any Java IDE.
+2. 🛠 Import into any Java IDE (IntelliJ, Eclipse)
 
-3. Set up your MySQL database and update credentials in DBConnection.java.
+3. 🧩 Configure MySQL Database
+   - Update credentials in `DBConnection.java`
+   - Import the SQL schema (see below)
 
-4. Add the MySQL JDBC driver (lib/mysql-connector-j-8.3.0.jar) to your classpath.
-
-5. Compile and run the App.java
-
----
-
-## 📥 Database Setup
-
-For the `.sql` database file, project report/presentation `.ppt`, or complete zip of the working project:  
-📩 **Please contact the developer directly.**
+4. ▶️ Run `App.java` and start using
 
 ---
 
-## 🧑‍💻 Author
+## 📥 Database & Resources
 
-**Romil Monpara**  
-B.Tech IT, LJIET Ahmedabad  
-📧 [GitHub](https://github.com/romilmonpara)
+For:
+- 🔐 Database `.sql` file
+- 📊 Project Presentation `.ppt`
+- 🗂️ Full working project zip (compiled + resources)
+
+📩 Please contact the developer directly.
+
+---
+
+## 👨‍💻 Author
+
+> 🚀 Romil Monpara  
+> 🎓 B.Tech IT, LJIET Ahmedabad  
+> 🌐 [GitHub Profile »](https://github.com/romilmonpara)
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE)
+
+---
+
+⭐ Star this repo if you like it — contributions welcome!
